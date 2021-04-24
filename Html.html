@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced DOM and Events</title>
+  <link rel="stylesheet" href="css\css.css" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="nav ">
+        <div class="nav-logo"><img src="image\logo.png" alt="logo" /></div>
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a class="nav-link" href="#section-1">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-2">Operation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-3">Testimonials</a>
+          </li>
+          <li class="nav-item cta">
+            <a href="#" class="open-account-btn nav-link">Open account</a>
+          </li>
+        </ul>
+      </div>
+      <div class="hero-box">
+        <div class="description">
+          <h1>
+            When
+            <span class="highlight">banking</span>
+            meets
+            <br>
+            <span class="highlight">minimalist</span>
+          </h1>
+          <h4>A simpler banking experience for a simpler life.<h4>
+              <button class="button learn-more">Learn More &downarrow;</button>
+        </div>
+
+        <div class="image">
+          <img class="hero-image" src="image\hero.png" alt="">
+        </div>
+      </div>
+    </header>
+    <div class="section features section-line" id="section-1">
+      <div class="section-title">
+        <div class="section-description">Feature</div>
+        <div class="section-content">Everything you need in a modern bank and more.</div>
+      </div>
+      <div class="feature">
+        <img class="lazy-image" src="image\digital-lazy.jpg" data-src="image\digital.jpg" alt="">
+        <div class="feature-feature">
+          <div class="feature-icon">
+            <svg>
+              <use xlink:href="image/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h2>100% digital bank</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta repellat autem impedit iusto neque
+              laudantium. Earum eius quod esse odit unde dolorems.</p>
+          </div>
+        </div>
+
+        <div class="feature-feature">
+          <div class="feature-icon">
+            <svg>
+              <use xlink:href="image/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h2>100% digital bank</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta repellat autem impedit iusto neque
+              laudantium. Earum eius quod esse odit unde dolorems.</p>
+          </div>
+        </div>
+
+        <img class="lazy-image" src="image\grow-lazy.jpg" data-src="image\grow.jpg" alt="">
+
+        <img class="lazy-image" src="image\card-lazy.jpg" data-src="image\card.jpg" alt="">
+
+        <div class="feature-feature">
+          <div class="feature-icon">
+            <svg>
+              <use xlink:href="image/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h2>100% digital bank</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta repellat autem impedit iusto neque
+              laudantium. Earum eius quod esse odit unde dolorems.</p>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+    <div class="section operation section-line" id="section-2">
+      <div class="section-title">
+        <div class="section-description">Operations</div>
+        <div class="section-content">Everything as simple as possible, but no simpler.</div>
+      </div>
+      <div class="operations">
+        <div class="operation-content operation-content-1  operation-content-active">
+          <svg class="icon">
+            <use xlink:href="image/icons.svg#icon-upload"></use>
+          </svg>
+          <div class="operation-content-descripton ">
+            <h1 class="header">Transfer money to anyone, istantly! No fees, no BS.
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit deleniti dolorum iure harum ab,
+              accusamus voluptatem assumenda rem sit vel error quas placeat consequatur ipsam? Quis repudiandae sit
+              animi.</p>
+          </div>
+        </div>
+        <div class="operation-content operation-content-2 ">
+          <svg class="icon">
+            <use xlink:href="image/icons.svg#icon-upload"></use>
+          </svg>
+          <div class="operation-content-descripton ">
+            <h1 class="header">Buy a home or make your dreams come true, with instant loans.
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit deleniti dolorum iure harum ab,
+              accusamus voluptatem assumenda rem sit vel error quas placeat consequatur ipsam? Quis repudiandae sit
+              animi.</p>
+          </div>
+        </div>
+        <div class="operation-content operation-content-3 ">
+          <svg class="icon">
+            <use xlink:href="image/icons.svg#icon-upload"></use>
+          </svg>
+          <div class="operation-content-descripton ">
+            <h1 class="header">No longer need your account? No problem! Close it instantly.
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit deleniti dolorum iure harum ab,
+              accusamus voluptatem assumenda rem sit vel error quas placeat consequatur ipsam? Quis repudiandae sit
+              animi.</p>
+
+          </div>
+
+        </div>
+        <div class="operation-btns">
+
+          <button class="btn operation-btn operation-btn-1 " data-tab="1"><span class="num">01</span>Instant
+            Transfers</button>
+          <button class="btn operation-btn operation-btn-2 " data-tab="2"><span class="num">02</span>Instant
+            Loans</button>
+          <button class="btn operation-btn operation-btn-3  " data-tab="3"><span class="num">03</span>Instant
+            Closing</button>
+
+
+        </div>
+      </div>
+
+    </div>
+    <div class="section testimonials section-line" id="section-3">
+      <div class="section-title">
+        <div class="section-description">Not Sure yet?</div>
+        <div class="section-content">Millions of Bankists are already makling their lifes simpler.</div>
+      </div>
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h3 class="header">Best financial decision ever!</h3>
+            <p class="description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit aspernatur odit ex illo tenetur officia
+              autem placeat eos impedit optio! Dignissimos magni reiciendis repellendus sint in possimus recusandae,
+              blanditiis alias?
+            </p>
+            <address class="author">
+              <img src="image/user-1.jpg" alt="testimoial-1" class="author-image">
+              <h6 class="author-name">Aaray Lynn</h6>
+              <p class="author-address">San Francisco, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h3 class="header">The last step to becoming a complete minimalist</h3>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita molestias totam amet repudiandae ex
+              alias, perspiciatis fuga est maiores modi cumque aspernatur, fugiat quia error autem nulla dolorum a
+              debitis.
+            </p>
+            <address class="author">
+              <img src="image/user-2.jpg" alt="testimoial-2" class="author-image">
+              <h6 class="author-name">Aaray Lynn</h6>
+              <p class="author-address">San Francisco, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h3 class="header">Finally free from old-school banks</h3>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, eveniet. Libero ducimus expedita
+              odio vero omnis, ex cupiditate repellat inventore obcaecati maiores ipsa incidunt excepturi officia quas
+              explicabo, adipisci impedit?
+            </p>
+            <address class="author">
+              <img src="image/user-3.jpg" alt="testimoial-3" class="author-image">
+              <h6 class="author-name">Aaray Lynn</h6>
+              <p class="author-address">San Francisco, USA</p>
+            </address>
+          </div>
+        </div>
+        <button class="slider-btn slider-btn-left">&larr;</button>
+        <button class="slider-btn slider-btn-right">&rarr;</button>
+
+        <div class="dots"></div>
+      </div>
+
+    </div>
+    <div class="section sign-up">
+      <h4 class="heading">The best day to join Bankist was one year
+        ago.The second best is today!
+      </h4>
+      <button class="btn cta">
+        Open your free account today!
+      </button>
+    </div>
+    <div class="footer">
+      <ul class="footer-nav">
+        <a href="#" class="footer-link"> About</a>
+        <a href="#" class="footer-link">Pricing</a>
+        <a href="#" class="footer-link">Terms of Use</a>
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Careers</a>
+        <a href="#" class="footer-link">Blog</a>
+        <a href="#" class="footer-link">Contact Us</a>
+      </ul>
+      <div class="logo">
+        <img src="image\icon.png" alt="logo">
+      </div>
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a class="footer__link twitter-link" target="_blank" href="https://twitter.com/jonasschmedtman">Jonas
+          Schmedtmann</a>. Use for learning or your portfolio. Don't use to teach. Don't claim
+        as your own product.
+      </p>
+    </div>
+
+    <!-- Javascript items -->
+    <div class="modal-close hidden">
+
+      <h2>Open Your Bank account <br> in just <span class="highlight">5 minutes</span></h2>
+
+      <form action="get" class="modal-form">
+        <label for="first-name">
+          First Name
+        </label>
+        <input type="text" id="first-name">
+        <label for="last-name">
+          Last Name
+        </label>
+        <input type="text" id="last-name">
+        <label for="email">
+          Email Address
+        </label>
+        <input type="text" id="email">
+      </form>
+
+      <button class="btn btn-next-step">
+        Next step &RightArrow;
+      </button>
+
+      <div class="modal-close-btn">&times;</div>
+    </div>
+    <div class="overlay hidden"></div>
+  </div>
+  <script src="js\script.js"></script>
+</body>
+
+</html>
